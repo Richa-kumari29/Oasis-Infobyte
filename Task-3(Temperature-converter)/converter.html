@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon.png" type="image/x-icon">
+    <title>converter</title>
+    <link rel="stylesheet" type ="text/css" href="style.css">
+</head>
+<body>
+  <div class="box">
+    <h2><u>Temperature Converter</u></h2>
+    <div class="text-box1">
+    
+<p><b>Type a value in the Fahrenheit field to convert the value to Celsius</b>></p>
+
+<p>
+  <label>Fahrenheit:-</label>
+  <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p1><b>Celcius</b>: <span id="outputCelcius"></span></p1>
+</div>
+<div class="text-box2">
+    
+  <p><b>Type a value in the Celsius field to convert the value to Fahrenheit</b>></p>
+  
+  <p>
+    <label>Celsius:-</label>
+    <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter1(this.value)" onchange="temperatureConverter1(this.value)">
+  </p>
+  <p1><b>Fahrenheit</b>: <span id="outputFahrenheit"></span></p1>
+  </div>
+</div>
+ <script src="function.js"></script>
+
+</body>
+</html>
